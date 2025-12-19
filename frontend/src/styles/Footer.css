@@ -1,0 +1,36 @@
+.custom-footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 3rem 0 1rem;
+  margin-top: 4rem;
+}
+
+.custom-footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.custom-footer .footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-footer .footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.custom-footer .footer-links a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-footer .footer-links a:hover {
+  color: #fff;
+}
+
+.custom-footer hr {
+  border-color: #495057;
+  margin: 2rem 0 1rem;
+}
