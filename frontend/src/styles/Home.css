@@ -1,0 +1,228 @@
+:root {
+  --maroon: #5E1F20;
+  --blue: #3D5A7A;
+  --gold: #FAC337;
+  --cream: #F2D9BB;
+  --light-cream: #F2E6D8;
+  
+  --font-family: -apple-system, BlinkMacSystemFont, "Varela Round", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-img {
+  width: 17rem;
+  height: auto;
+  margin: 0 0 !important;
+  position: relative;
+}
+
+.title-img {
+  width: 40rem;
+  height: auto;
+  margin: 0 0 !important;
+}
+
+.mission {
+  border: 5px solid var(--gold);
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 8rem;
+}
+
+.mission-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.mission-text {
+  font-size: 1.5rem;
+  color: var(--cream);
+  text-align: center;
+  margin: 0 auto 1.5rem auto;
+  line-height: 2.2rem;
+}
+
+.hero-title {
+  position: absolute;
+  top: 17.8%;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.016rem;
+  background-color: rgba(94, 31, 32, 0.8);
+  margin-top: 0.5rem;
+  color: var(--gold);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 16px;
+}
+
+.hero-img {
+  display: inline;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.who {
+  font-size: 3.825rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.765rem;
+  text-align: left;
+  line-height: 4.59rem;
+  padding: 0.3825rem;
+  border-radius: 7.65px;
+}
+
+.who mark {
+  display: block;
+  background: none;
+  color: var(--gold);
+  padding: 0 0;
+}
+
+/* Custom utility classes */
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.custom-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-shadow-lg {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-rounded {
+  border-radius: 8px;
+}
+
+.custom-card {
+  background-color: var(--light-cream) !important;
+  width: 22.95rem;
+  height: 14.535rem;
+  border-radius: 12.24px;
+  box-shadow: 0 1.53px 2.295px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  transform-origin: center;
+  position: relative;
+  top: 3.825rem;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.fun-img {
+  width: 27.9rem;
+  height: auto;
+  border-radius: 7.65px;
+  box-shadow: 0px 0px 1.53px 3.06px rgba(0, 0, 0, 0.2);
+  border: var(--gold) 3.06px solid;
+  position: relative;
+  top: 25%;
+}
+
+.flip-card {
+  width: 22.95rem !important;
+  height: 14.535rem !important;
+  perspective: 765px; /* gives the 3D depth */
+  
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* keep children in 3D space */
+  transition: transform 600ms ease;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden; /* hide the “mirrored” side */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12.24px;
+  border: 0.765px solid rgba(0,0,0,.15);
+  box-shadow: 0px 0px 1.53px 2.295px rgba(0, 0, 0, 0.2);
+  
+}
+
+.flip-front {
+  background-color: var(--light-cream) !important;
+  /* front styling */
+}
+
+.flip-front h3 {
+  font-size: 2.295rem;
+  font-weight: bold;
+  color: var(--maroon);
+  margin: 0;
+}
+
+.priest-icon{
+  position: relative;
+  bottom: 3.06rem;
+  width: 5.355rem;
+  height: auto;
+  margin: 0;
+}
+
+.card-icon {
+  position: relative;
+  bottom: 3.06rem;
+  width: 4.59rem;
+  height: auto;
+  margin: 0;
+}
+
+.flip-back {
+  transform: rotateY(180deg); /* pre-rotate back so it's readable after flip */
+  background: var(--light-cream) !important;
+  /* back styling */
+}
+
+.flip-back p {
+  font-size: 1.7595rem;
+  color: var(--blue);
+  padding-left: 1.53rem;
+  padding-right: 1.53rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/* .flip-back p mark {
+  background-color: var(--gold);
+  padding-top: 0;
+  padding-bottom: 0;
+  color: var(--maroon);
+} */

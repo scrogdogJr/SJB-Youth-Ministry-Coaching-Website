@@ -1,0 +1,96 @@
+:root {
+  --maroon: #5E1F20;
+  --blue: #3D5A7A;
+  --gold: #FAC337;
+  --cream: #F2D9BB;
+  --light-cream: #F2E6D8;
+  
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.meet-coach-background {
+  background-color: var(--blue);
+  min-height: 120vh !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.coach-title {
+  color: var(--gold);
+  font-size: 3.5rem;
+  position: relative;
+  border-top: var(--gold) 7px solid;
+  border-bottom: var(--gold) 7px solid;
+  width: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.coach-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-height: calc(100vh - 200px);
+}
+
+.coach-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  margin-left: -2rem;
+  z-index: 100;
+}
+
+.coach-text {
+  color: var(--light-cream);
+  padding-left: 2rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.coach-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.coach-text::-webkit-scrollbar-track {
+  background: rgba(242, 230, 216, 0.1);
+  border-radius: 4px;
+}
+
+.coach-text::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
+
+.coach-text::-webkit-scrollbar-thumb:hover {
+  background: var(--cream);
+}
+
+.coach-name {
+  color: var(--gold);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.coach-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}

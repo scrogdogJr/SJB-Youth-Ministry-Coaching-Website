@@ -1,0 +1,157 @@
+root {
+  --maroon: #5E1F20;
+  --blue: #3D5A7A;
+  --gold: #FAC337;
+  --cream: #F2D9BB;
+  --light-cream: #F2E6D8;
+  
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.background{
+  background-image: linear-gradient(var(--blue), var(--blue)), linear-gradient(var(--maroon), var(--maroon)), linear-gradient(var(--blue), var(--blue));
+  background-size: 100% 200vh, 100% 250vh, 100% 100vh, 100% 75.1vh;
+  background-position: 0 0, 0 200vh, 0 300vh, 0 225vh;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  min-height: 400vh;
+  position: relative;
+  z-index: 100;
+}
+
+.title{
+  color: var(--gold);
+  font-size: 3.5rem;
+  position: relative;
+  border-top: var(--gold) 7px solid;
+  border-bottom: var(--gold) 7px solid;
+  width: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.pillars-container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  gap: 1rem;
+}
+
+.pillar-wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  transform: translateY(2rem);
+}
+
+.pillar-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  transform: translateY(-1rem);
+}
+
+.pillar-wrapper-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  transform: translateY(3.5rem);
+}
+
+.pillar-wrapper-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  transform: translateY(0.5rem);
+}
+
+.pillar-wrapper-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  transform: translateY(-2rem);
+}
+
+.pillar-wrapper-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  transform: translateY(1.5rem);
+}
+
+.pillar-wrapper-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%;
+  transform: translateY(-0.5rem);
+}
+
+.pillar-title {
+  background-color: var(--maroon);
+  color: var(--light-cream);
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillar-title:hover {
+  background-color: var(--gold);
+  color: var(--maroon);
+  transform: translateY(-3px);
+}
+
+.pillar-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Varying pillar heights */
+.pillar-1 .pillar-img {
+  height: 16rem;
+}
+
+.pillar-2 .pillar-img {
+  height: 16rem;
+}
+
+.pillar-3 .pillar-img {
+  height: 16rem;
+}
+
+.pillar-4 .pillar-img {
+  height: 16rem;
+}
+
+.pillar-5 .pillar-img {
+  height: 16rem;
+}
+
+.pillar-6 .pillar-img {
+  height: 16rem;
+}
+
+.pillar-7 .pillar-img {
+  height: 16rem;
+}
