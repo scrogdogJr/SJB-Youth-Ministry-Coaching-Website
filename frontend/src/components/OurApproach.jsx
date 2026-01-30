@@ -1,6 +1,5 @@
 import { Container } from "react-bootstrap";
 import '../styles/OurApproach.css';
-import { useEffect } from 'react';
 
 function OurApproach() {
 

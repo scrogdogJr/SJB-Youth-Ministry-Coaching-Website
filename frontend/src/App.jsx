@@ -1,8 +1,5 @@
 import {Routes, Route} from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 import NavBar from './components/NavBar';
-import SubNavBar from './components/SubNavBar';
-import Footer from './components/Footer';
 import Home from './components/Home';
 import OurApproach from './components/OurApproach';
 import MeetYourCoach from './components/MeetYourCoach';
